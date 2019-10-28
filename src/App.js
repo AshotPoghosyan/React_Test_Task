@@ -3,14 +3,14 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import ReactCarusel from "./components/ReactCarusel";
 import Login from "./components/Login";
 import Menu from "./components/Menu";
-import {createBrowserHistory} from "history";
+import Title from "./components/Title";
 
-export const history = createBrowserHistory()
 
 function App() {
   return (
     <BrowserRouter >
         <Menu/>
+        <Title />
       <Switch>
          <Route  path={'/'} exact component={ReactCarusel}/>
          <Route path={'/login'} component={Login}/>

@@ -27,7 +27,7 @@ class Login extends React.Component{
                         <div className="card-header">
                             <h3>Sign In</h3>
                             <div className="d-flex justify-content-end social_icon">
-                                <span><i className="fab fa-facebook-square"/></span>
+                                <a href = "https://www.facebook.com/"><span><i className="fab fa-facebook-square"/> </span></a>
                                 <span><i className="fab fa-google-plus-square"/></span>
                                 <span><i className="fab fa-twitter-square"/></span>
                             </div>

@@ -5,16 +5,10 @@ import {myImages} from "../db/FakeDB";
 
 
 class ReactCarusel extends React.Component{
-
-    constructor(props) {
-        super(props);
-
-    }
-
     render(){
         return(
             <div className="container carusel">
-            <Carousel autoPlay infiniteLoop={true} showStatus={false} showIndicators={false} width={"75"}>
+            <Carousel autoPlay={true} infiniteLoop={true} showStatus={false} showIndicators={false} dinamicHeight = {true}>
                 {
                     myImages.map((item, index) => {
                         return <div key={index}>
